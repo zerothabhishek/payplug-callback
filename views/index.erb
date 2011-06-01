@@ -1,0 +1,10 @@
+<h1>All Notifications</h1>
+
+<% @notifications.each do |n| %>
+	<div> 
+		<span class=""><%= n.id %>&nbsp &nbsp &nbsp &nbsp </span>
+		<span class=""><%= n.gateway %>&nbsp &nbsp &nbsp &nbsp </span>
+		<span class=""><%= n.created_at %> &nbsp &nbsp &nbsp &nbsp </span> 
+		<span class=""><%= n.params %> </span>
+	</div>
+<% end %>
