@@ -1,5 +1,5 @@
 
-set :database, 'sqlite://payplug-notifications.db'
+set :database, ENV['DATABASE_URL'] || 'sqlite://payplug-notifications.db'
 
 migration "create notifications" do
   database.create_table :notifications do
